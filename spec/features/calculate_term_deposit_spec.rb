@@ -26,8 +26,12 @@ RSpec.describe "Calculate term deposit" do
   end
 
   context "a user provides invalid params" do
+    it "raises an ArgumentError" do
+      expect { Calculator.calculate(10000, 1.10, 3, "invalid") }.to raise_error(ArgumentError)
+    end
+
     it "returns a useful error message" do
-      expect { Calculator.calculate(10000, 1.10, 3, "invalid") }.to raise_error(/error/)
+      expect { Calculator.calculate(10000, 1.10, 3, "invalid") }.to raise_error(/not a valid vesting period/)
     end
   end
 end
