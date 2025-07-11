@@ -13,7 +13,7 @@ First iteration involves using the calculator through a rails console.
 
 ## How to run
 
-1. Clone the project from github `git clone XXXX`
+1. Clone the project from github `git clone git@github.com:lucitemple/deposit_calculator.git`
 2. Navigate into the project directory `cd deposit_calculator`
 3. Install any dependencies and `bundle install`
 4. Open a rails console `bin/rails c`
@@ -49,10 +49,10 @@ MVP towards building a term deposit calculator similar the one on the website,
 - return rounded to the nearest whole number (same as online calculator)
 - return as number, does not include $ symbol or punctuation
 
-<!-- Formula used for calculator:
+Formulas used for calculator:
 
-- Daily: B = Principle(1+ rate/365) to power of 365*term
+<!-- - Daily: B = Principle(1+ rate/365) to power of 365*term -->
 - Monthly: B = Principle(1+ rate/12) to power of 12*term
 - Quarterly: B = Principle(1+ rate/4) to power of 4*term
 - Annual: B = Principle(1+ rate) to power of term
-- Maturity: B = Principle(1+ rate*term)  -->
+- Maturity: B = Principle(1+ rate*term) 
