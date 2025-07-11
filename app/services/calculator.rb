@@ -16,6 +16,9 @@ class Calculator
       annually_rate = 1 + normalised_rate
       formulated = annually_rate ** term
       (initial_deposit * formulated).round()
+    elsif period == "maturity"
+      formulated = 1 + (normalised_rate * term)
+      (initial_deposit * formulated).round()
     end
   end
 end

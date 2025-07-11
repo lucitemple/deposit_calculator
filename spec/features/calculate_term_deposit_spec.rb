@@ -19,7 +19,6 @@ RSpec.describe "Calculate term deposit" do
       expect(final_balance).to eq(10334)
     end
     it "returns the correct final balance for vesting at maturity" do
-      pending "Implement the Calculator"
       final_balance = Calculator.calculate(10000, 1.10, 3, "maturity")
 
       expect(final_balance).to eq(10330)
