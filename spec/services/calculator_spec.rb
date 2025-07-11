@@ -1,7 +1,7 @@
 require "rails_helper"
 
-RSpec.describe "Calculate term deposit" do
-  context "a user provides valid params" do
+RSpec.describe "Calculator" do
+  describe ".calculate" do
     it "returns the correct final balance for monthly vesting" do
       pending "Implement the Calculator"
       final_balance = Calculator.calculate(1000, 1.10, 3, "monthly")
