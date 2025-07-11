@@ -9,7 +9,6 @@ RSpec.describe "Calculate term deposit" do
     end
 
     it "returns the correct final balance for quarterly vesting" do
-      pending "Implement the Calculator"
       final_balance = Calculator.calculate(10000, 1.10, 3, "quarterly")
 
       expect(final_balance).to eq(10335)
