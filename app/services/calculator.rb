@@ -12,6 +12,10 @@ class Calculator
       power = 4 * term
       formulated = quarterly_rate ** power
       (initial_deposit * formulated).round()
+    elsif period == "annually"
+      annually_rate = 1 + normalised_rate
+      formulated = annually_rate ** term
+      (initial_deposit * formulated).round()
     end
   end
 end
