@@ -24,4 +24,10 @@ RSpec.describe "Calculate term deposit" do
       expect(final_balance).to eq(10330)
     end
   end
+
+  context "a user provides invalid params" do
+    it "returns a useful error message" do
+      expect { Calculator.calculate(10000, 1.10, 3, "invalid") }.to raise_error(/error/)
+    end
+  end
 end
