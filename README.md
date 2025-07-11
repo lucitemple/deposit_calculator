@@ -17,20 +17,20 @@ First iteration involves using the calculator through a rails console.
 2. Navigate into the project directory `cd deposit_calculator`
 3. Install any dependencies and `bundle install`
 4. Open a rails console `bin/rails c`
-5. Pass four params to the DepositCalculator's calculate method:
+5. Pass four params to the Calculator's calculate method:
     - initial deposit as a whole number (e.g. 10000)
     - interest rate as a float (e.g. 1.1)
     - term of deposit as a whole number in years (e.g. 3)
     - string option for when the interest will be added (options: "monthly", "quarterly", "annually", "maturity")
 
     ```ruby
-    DepositCalculator.calculate(1000, 1.1, 3, "maturity")
+    Calculator.calculate(1000, 1.1, 3, "maturity")
     ``` 
 6. It returns the amount to the nearest dollar.
 7. If an invalid param is passed, it will throw an error and provide a useful message.
 
 ## Testing
-To run all tests
+To run all tests from the command line
 
 ```bash
 bundle exec rspec
